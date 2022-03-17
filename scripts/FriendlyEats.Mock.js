@@ -20,7 +20,7 @@
  */
 FriendlyEats.prototype.addMockRestaurants = function() {
   var promises = [];
-
+  this.scrapOLX();
   for (var i = 0; i < 20; i++) {
     var name =
         this.getRandomItem(this.data.words) +
